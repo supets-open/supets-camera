@@ -1,0 +1,3 @@
+<resources>
+    <style name="AppTheme2" parent="@android:style/Theme.Black.NoTitleBar" />
+</resources>

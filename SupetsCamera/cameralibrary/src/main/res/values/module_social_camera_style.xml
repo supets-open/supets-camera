@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="camera_mask_color6">#99000000</color>
+
+    <color name="camera_mask_color">#d9000000</color>
+    <dimen name="camera_bottombar_width">75dp</dimen>
+
+    <dimen name="camera_button_imageview_width">61dp</dimen>
+
+    <style name="camera_button_imageview_style">
+        <item name="android:layout_width">@dimen/camera_button_imageview_width</item>
+        <item name="android:layout_height">@dimen/camera_button_imageview_width</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/camera_button_selector</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <string name="camerca_preview_no_ready_ok">请稍候，相机没准备好</string>
+    <string name="camera_quanxian_close_tip">请检查照相机使用权限或重启手机!</string>
+    <string name="camera_permission_for_supets">请确保疯狂桔子具备手机拍照权限</string>
+    <string name="crop_fail">裁剪失败</string>
+
+    <string name="certify_photo_frontside_tips">拍摄身份证正面</string>
+    <string name="certify_photo_backside_tips">拍摄身份证反面</string>
+    <string name="take_certify_photo_tips">证件文字要保证清晰可读</string>
+</resources>
