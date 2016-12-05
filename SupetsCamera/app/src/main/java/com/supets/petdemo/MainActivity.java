@@ -14,9 +14,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.supets.pet.supetscamera.R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
-        findViewById(com.supets.pet.supetscamera.R.id.take).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.take).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CameraConfig.CAMERA_ACTION);
@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        findViewById(com.supets.pet.supetscamera.R.id.take2).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.take2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CameraConfig.CAMERA_ACTION);
