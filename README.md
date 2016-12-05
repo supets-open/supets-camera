@@ -20,10 +20,9 @@
            MYUtils.showToastMessage(data.getData().getQueryParameter(CameraConfig.CAMERA_KEY_CER));
            MYUtils.showToastMessage(data.getData().getQueryParameter(CameraConfig.CAMERA_KEY_FRONT_SIDE));
         } 
- 
+        
  ## 演示
-
+ 
 ![pic1](https://github.com/supets-open/supets-camera/blob/master/SupetsCamera/doc/Screenshot_2016-12-05-18-22-07.jpeg)
 ![pic1](https://github.com/supets-open/supets-camera/blob/master/SupetsCamera/doc/Screenshot_2016-12-05-18-22-19.jpeg)
-![pic1](https://github.com/supets-open/supets-camera/blob/master/SupetsCamera/doc/Screenshot_2016-12-05-18-24-09.jpeg)
 
