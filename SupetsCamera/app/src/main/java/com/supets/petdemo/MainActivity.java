@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.supets.pet.supetscamera.R.layout.activity_main);
+
         findViewById(com.supets.pet.supetscamera.R.id.take).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,6 +24,7 @@ public class MainActivity extends Activity {
                 startActivityForResult(intent, 8888);
             }
         });
+
         findViewById(com.supets.pet.supetscamera.R.id.take2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

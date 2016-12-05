@@ -18,7 +18,6 @@
     <string name="camerca_preview_no_ready_ok">请稍候，相机没准备好</string>
     <string name="camera_quanxian_close_tip">请检查照相机使用权限或重启手机!</string>
     <string name="camera_permission_for_supets">请确保疯狂桔子具备手机拍照权限</string>
-    <string name="crop_fail">裁剪失败</string>
 
     <string name="certify_photo_frontside_tips">拍摄身份证正面</string>
     <string name="certify_photo_backside_tips">拍摄身份证反面</string>
