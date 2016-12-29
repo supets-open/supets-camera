@@ -1,5 +1,17 @@
 apply plugin: 'com.android.library'
 
+apply plugin: 'maven'
+group = 'com.supets.pet.utils.fresco'
+version = '2.0.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
