@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wholeView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/new_title_bar_bg">
+
+    <LinearLayout
+        android:id="@+id/header_left"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/header_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_login_close"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp38" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/header_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/header_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px20"
+            android:paddingRight="@dimen/px20"
+            android:textColor="#70000000"
+            android:textSize="@dimen/sp32"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/px100"
+        android:layout_marginRight="@dimen/px100"
+        android:id="@+id/header_center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/camera_down_selector"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="所有图片"
+            android:textColor="#545454"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/line_horizontal"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

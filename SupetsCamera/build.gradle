@@ -5,17 +5,39 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:2.2.3'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
+
+//    plugins {
+//        id "com.github.dcendents.android-maven" version "1.5"
+//    }
+//
+//    plugins {
+//        id "com.jfrog.bintray" version "1.7"
+//    }
 }
 
 allprojects {
     repositories {
         jcenter()
     }
+}
+
+//定义整个工程的build版本和java版本
+ext {
+    compileSdkVersion = 23
+    buildToolsVersion = "23.0.3"
+
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+
+    minSdkVersion =9
+    targetSdkVersion = 16
 }
 
 task clean(type: Delete) {

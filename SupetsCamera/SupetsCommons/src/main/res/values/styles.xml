@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mia_commons_color">#ff3300</color>
+
+    <style name="mia_commons_line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mia_commons_line_1px</item>
+        <item name="android:background">@color/mia_commons_line_color</item>
+    </style>
+
+    <style name="mia_commons_button">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+</resources>

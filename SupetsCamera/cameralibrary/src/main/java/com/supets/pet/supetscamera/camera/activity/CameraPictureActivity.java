@@ -16,7 +16,6 @@ import com.supets.pet.supetscamera.camera.viewholder.CameraViewControler;
 import java.io.File;
 
 //参数来源2个:type(true实名认证，非实名认证)  frontSide(true正面 false 反面)
-
 public class CameraPictureActivity extends BaseActivity implements CameraViewControler.TakePictureCallBack {
 
     private View mWholeView;

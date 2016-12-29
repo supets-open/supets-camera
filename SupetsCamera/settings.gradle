@@ -1,1 +1,14 @@
-include ':app', ':cameralibrary'
+include ':app'
+
+include ':supetscontext'
+include ':jsonlibrary'
+include ':okhttplibrary'
+
+include ':SupetsCommons'
+include ':frescolibrary'
+include ':cameralibrary'
+include ':multiimageselector'
+include ':croplibrary'
+
+
+

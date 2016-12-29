@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wholeView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mia_commons_title_bar_height"
+    android:layout_gravity="center_vertical"
+    android:background="@color/mia_commons_new_title_bar_bg" >
+
+    <LinearLayout
+        android:id="@+id/header_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:layout_alignParentLeft="true" >
+        <TextView
+            android:id="@+id/header_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/mia_commons_btn_title_bar_back"
+            android:paddingLeft="@dimen/mia_commons_px20"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:textColor="@color/mia_commons_white"
+            android:textSize="@dimen/mia_commons_sp32" />
+        <ImageButton
+            android:id="@+id/header_left_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/header_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/mia_commons_new_title_bar_text_color"
+            android:textSize="@dimen/mia_commons_title_bar_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/header_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="@dimen/mia_commons_px20"
+            android:textColor="@drawable/mia_commons_color_title_text"
+            android:textSize="@dimen/mia_commons_sp32" />
+
+        <ImageButton
+            android:id="@+id/header_right_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="@dimen/mia_commons_px20"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/mia_commons_line_horizontal"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

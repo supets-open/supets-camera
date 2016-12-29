@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CommonHeader">
+        <attr name="leftText" format="reference|string" />
+        <attr name="rightText" format="reference|string" />
+        <attr name="titleText" format="reference|string" />
+        <attr name="leftBgDrawable" format="reference" />
+        <attr name="rightBgDrawable" format="reference" />
+        <attr name="rightTextColor" format="reference|color" />
+        <attr name="leftTextColor" format="reference|color" />
+        <attr name="titleTextLayoutPadding" format="reference|dimension" />
+        <attr name="leftRightTextPadding" format="reference|dimension" />
+    </declare-styleable>
+
+</resources>

@@ -1,9 +1,11 @@
-package com.supets.pet.supetscamera.camera.utils;
+package com.supets.pet.supetscontext;
 
 import android.app.Application;
 import android.widget.Toast;
 
-
+/**
+ * Created by ZhangTao on 10/12/16.
+ */
 public class App {
 
     public static final Application INSTANCE;

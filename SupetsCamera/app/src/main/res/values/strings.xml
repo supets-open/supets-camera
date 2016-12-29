@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">SupetsCamera</string>
-
+    <string name="app_name">相机</string>
+    <string name="app_crop">图片裁剪</string>
+    <string name="app_multi">图片选择器</string>
 </resources>

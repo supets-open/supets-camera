@@ -3,8 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SupetsCamera.iml" filepath="$PROJECT_DIR$/SupetsCamera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupetsCommons/SupetsCommons.iml" filepath="$PROJECT_DIR$/SupetsCommons/SupetsCommons.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cameralibrary/cameralibrary.iml" filepath="$PROJECT_DIR$/cameralibrary/cameralibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/croplibrary/croplibrary.iml" filepath="$PROJECT_DIR$/croplibrary/croplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frescolibrary/frescolibrary.iml" filepath="$PROJECT_DIR$/frescolibrary/frescolibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonlibrary/jsonlibrary.iml" filepath="$PROJECT_DIR$/jsonlibrary/jsonlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiimageselector/multiimageselector.iml" filepath="$PROJECT_DIR$/multiimageselector/multiimageselector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttplibrary/okhttplibrary.iml" filepath="$PROJECT_DIR$/okhttplibrary/okhttplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supetscontext/supetscontext.iml" filepath="$PROJECT_DIR$/supetscontext/supetscontext.iml" />
     </modules>
   </component>
 </project>

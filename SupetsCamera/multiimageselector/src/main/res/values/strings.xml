@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">multiimageselector</string>
+    <!--背景色-->
+    <color name="bg_page">#fff6f6f6</color>
+    <dimen name="title_bar_height">48dp</dimen>
+    <!--顶部导航背景色和标题色-->
+    <color name="new_title_bar_bg">#f7f7f7</color>
+    <!--常见颜色-->
+    <color name="white">#ffffff</color>
+
+    <style name="line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_1px</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+    <dimen name="line_1px">0.5dp</dimen>
+
+    <drawable name="transparence">#0000</drawable>
+    <color name="transparent">#0000</color>
+
+    <!--线颜色-->
+    <color name="line_color">#e5e5e5</color>
+    <!--定义APP主题色-->
+    <color name="app_color">#ff3300</color>
+    <!--占位图-->
+    <color name="place_holder">#f0f0f0</color>
+    <drawable name="place_holder">@color/place_holder</drawable>
+
+</resources>

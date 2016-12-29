@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="camera_mask_color6">#99000000</color>
+
+    <string name="photo_too_small_tip">您选择的图片太小</string>
+    <dimen name="camera_picture_divheight">2dp</dimen>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <string name="preview">预览</string>
+</resources>

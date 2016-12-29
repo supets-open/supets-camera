@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- commonHeader -->
+    <color name="mia_commons_new_title_bar_bg">#f7f7f7</color>
+    <color name="mia_commons_new_title_bar_text_color">#333333</color>
+    <color name="mia_commons_line_color">#e5e5e5</color>
+    <color name="mia_commons_white">#ffffff</color>
+    <!-- commonHeader  -->
+    <dimen name="mia_commons_title_bar_height">48dp</dimen>
+    <dimen name="mia_commons_title_bar_title_text_size">18sp</dimen>
+    <dimen name="mia_commons_px20">10dp</dimen>
+    <dimen name="mia_commons_sp38">19sp</dimen>
+    <dimen name="mia_commons_sp32">16sp</dimen>
+    <dimen name="mia_commons_line_1px">0.5dp</dimen>
+
+    <!--pageView -->
+    <color name="mia_commons_page_view_text">#666666</color>
+    <color name="mia_commons_btn_reloaded_pressed">@color/mia_commons_app_color_pressed</color>
+    <color name="mia_commons_btn_reloaded_normal">@color/mia_commons_color</color>
+    <color name="mia_commons_app_color_pressed">#e94709</color>
+    <!--pageView -->
+    <dimen name="mia_commons_page_view_text">14sp</dimen>
+    <!-- page view -->
+    <string name="mia_commons_page_view_empty">暂无数据</string>
+    <string name="mia_commons_page_view_loading">正在加载&#8230;</string>
+    <string name="mia_commons_no_more_data_hint">没有更多内容了</string>
+    <string name="mia_commons_network_error_hint">网络异常，请检查网络</string>
+    <string name="mia_commons_network_error_refresh">重新加载</string>
+    <style name="button_network_error_reloaded" parent="mia_commons_button">
+        <item name="android:textColor">@drawable/mia_commons_color_reloaded_text_selector</item>
+        <item name="android:background">@drawable/mia_commons_btn_reloaded_selector</item>
+    </style>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_view_network_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/page_view_network_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/mia_commons_icon_page_view_network_error"
+        android:gravity="center"
+        android:text="@string/mia_commons_network_error_hint"
+        android:textColor="@color/mia_commons_page_view_text"
+        android:textSize="@dimen/mia_commons_page_view_text" />
+
+    <Button
+        android:id="@+id/page_view_refresh"
+        style="@style/button_network_error_reloaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="8dp"
+        android:text="@string/mia_commons_network_error_refresh"
+        android:textSize="@dimen/mia_commons_page_view_text" />
+
+</LinearLayout>

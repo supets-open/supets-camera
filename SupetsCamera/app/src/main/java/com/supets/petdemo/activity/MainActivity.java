@@ -1,13 +1,15 @@
-package com.supets.petdemo;
+package com.supets.petdemo.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.style.ImageSpan;
 import android.view.View;
 
 import com.supets.pet.supetscamera.camera.utils.CameraConfig;
 import com.supets.pet.supetscamera.camera.utils.MYUtils;
+import com.supets.petdemo.R;
 
 public class MainActivity extends Activity {
 
@@ -33,7 +35,9 @@ public class MainActivity extends Activity {
                 startActivityForResult(intent, 8888);
             }
         });
+
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -44,5 +48,7 @@ public class MainActivity extends Activity {
             MYUtils.showToastMessage(data.getData().getQueryParameter(CameraConfig.CAMERA_KEY_FRONT_SIDE));
         }
     }
+
+
 
 }

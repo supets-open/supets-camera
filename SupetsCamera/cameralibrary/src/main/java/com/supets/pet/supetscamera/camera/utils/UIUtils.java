@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
 
+import com.supets.pet.supetscontext.App;
+
 public class UIUtils {
 
     public static Context getContext() {

@@ -1,0 +1,4 @@
+<resources>
+    <item name="tag_fresco_uri" type="id"/>
+    <item name="tag_fresco_flag" type="id"/>
+</resources>

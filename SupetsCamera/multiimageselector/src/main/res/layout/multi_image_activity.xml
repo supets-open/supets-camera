@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page"
+    >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:id="@+id/header"
+        layout="@layout/multi_image_customer_actionbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/folder"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/camera_mask_color6"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

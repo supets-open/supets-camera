@@ -8,8 +8,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/SupetsCommons" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/cameralibrary" />
+            <option value="$PROJECT_DIR$/croplibrary" />
+            <option value="$PROJECT_DIR$/frescolibrary" />
+            <option value="$PROJECT_DIR$/jsonlibrary" />
+            <option value="$PROJECT_DIR$/multiimageselector" />
+            <option value="$PROJECT_DIR$/okhttplibrary" />
+            <option value="$PROJECT_DIR$/supetscontext" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
