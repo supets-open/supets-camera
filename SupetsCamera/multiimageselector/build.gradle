@@ -7,18 +7,25 @@ version = '2.0.0'
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: uri('../repo'))
+            repository(url: 'http://localhost:8081/nexus/content/repositories/supet') {
+                authentication(userName: "admin", password: "admin123")
+            }
         }
     }
 }
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
 
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 24
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
 
@@ -31,6 +38,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions { abortOnError true }
 }
 
 dependencies {
@@ -38,15 +46,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile project(':SupetsCommons')
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
 
     testCompile 'junit:junit:4.12'
 
-    compile project(':supetscontext')
-    compile project(':jsonlibrary')
-    compile project(':okhttplibrary')
+    compile 'com.supets.commons:SupetsCommons:2.0.0'
+    compile 'com.supets.pet.utils.fresco:frescolibrary:2.0.0'
 
-    compile project(':frescolibrary')
 }

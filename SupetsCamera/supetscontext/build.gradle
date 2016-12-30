@@ -7,7 +7,9 @@ version = '2.0.0'
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: uri('../repo'))
+            repository(url: 'http://localhost:8081/nexus/content/repositories/supet') {
+               authentication(userName: "admin", password: "admin123")
+            }
         }
     }
 }

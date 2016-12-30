@@ -1,14 +1,30 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+
+apply plugin: 'maven'
+group = 'com.supets.pet.supetscamera'
+version = '2.0.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'http://localhost:8081/nexus/content/repositories/supet') {
+                authentication(userName: "admin", password: "admin123")
+            }
+        }
+    }
+}
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 24
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
 
@@ -21,91 +37,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions { abortOnError true }
 }
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
     compile 'com.anthonycr.grant:permissions:1.0'
     testCompile 'junit:junit:4.12'
-    compile project(path: ':supetscontext')
+
+    compile 'com.supets.pet.supetscontext:supetscontext:2.0.0'
+
+
 }
 
-version = "1.0.1"   // #修改# // 这里是aar的版本号
-
-def siteUrl = 'https://github.com/saiwu-bigkoo/Android-PickerView'                        // #修改# // 项目的主页地址，我这里是我的PickerView项目在github的链接地址
-def gitUrl = 'https://github.com/saiwu-bigkoo/Android-PickerView.git'                     // #修改# // 项目 git 地址，我这里同样是用Github上的git地址
-group = "com.bigkoo"             // #修改# // 组名称，这个相当于依赖的时候 compile 'com.bigkoo:pickerview:1.0.1' “:”号前面的前缀
-
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom {
-            project {
-                packaging 'aar'
-                name 'PickerView For Android'                                   // #修改# // 标题
-                url siteUrl
-                // Set your license
-                licenses {
-                    license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-                developers {
-                    developer {
-                        id 'sai'                                           // #修改# // 你的userid，昵称
-                        name 'sai.wu'                                       // #修改# // 用户名
-                        email 'sai.wu@bigkoo.com'                               // #修改# // 邮箱
-                    }
-                }
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
-                }
-            }
-        }
-    }
-}
-
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-    // 上面两个 user和key 需要留意一下，在local.properites 里面配置的
-    configurations = ['archives']
-    pkg {
-        repo = "maven"
-        name = "PickerView"                                                 // #修改# //  在 jcenter 上面的项目名字
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
-        publish = true
-    }
-}
