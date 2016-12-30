@@ -32,6 +32,6 @@ dependencies {
     })
 
     compile 'com.supets.pet.supetscamera:cameralibrary:2.0.0'
-    compile project(':multiimageselector')
+    compile 'com.supets.pet.multiimageselector:multiimageselector:2.0.0'
 
 }

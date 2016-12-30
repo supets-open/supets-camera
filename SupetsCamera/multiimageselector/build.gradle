@@ -52,6 +52,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile 'com.supets.commons:SupetsCommons:2.0.0'
-    compile 'com.supets.pet.utils.fresco:frescolibrary:2.0.0'
+    compile 'com.supets.pet.frescolibrary:frescolibrary:2.0.0'
 
 }
