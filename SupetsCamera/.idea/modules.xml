@@ -2,16 +2,29 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/thirdlib/Emojicon/Emojicon.iml" filepath="$PROJECT_DIR$/thirdlib/Emojicon/Emojicon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirdlib/MotuSDKLib/MotuSDKLib.iml" filepath="$PROJECT_DIR$/thirdlib/MotuSDKLib/MotuSDKLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirdlib/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/thirdlib/PushSDK/PushSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/SupetsCamera.iml" filepath="$PROJECT_DIR$/SupetsCamera.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SupetsCommons/SupetsCommons.iml" filepath="$PROJECT_DIR$/SupetsCommons/SupetsCommons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirdlib/WeiboSDK/WeiboSDK.iml" filepath="$PROJECT_DIR$/thirdlib/WeiboSDK/WeiboSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirdlib/XiaonengChatUI/XiaonengChatUI.iml" filepath="$PROJECT_DIR$/thirdlib/XiaonengChatUI/XiaonengChatUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cameralibrary/cameralibrary.iml" filepath="$PROJECT_DIR$/cameralibrary/cameralibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/croplibrary/croplibrary.iml" filepath="$PROJECT_DIR$/croplibrary/croplibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/frescolibrary/frescolibrary.iml" filepath="$PROJECT_DIR$/frescolibrary/frescolibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jsonlibrary/jsonlibrary.iml" filepath="$PROJECT_DIR$/jsonlibrary/jsonlibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/multiimageselector/multiimageselector.iml" filepath="$PROJECT_DIR$/multiimageselector/multiimageselector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/okhttplibrary/okhttplibrary.iml" filepath="$PROJECT_DIR$/okhttplibrary/okhttplibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/supetscontext/supetscontext.iml" filepath="$PROJECT_DIR$/supetscontext/supetscontext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commonui/commonui.iml" filepath="$PROJECT_DIR$/commons/commonui/commonui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commonutils/commonutils.iml" filepath="$PROJECT_DIR$/commons/commonutils/commonutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/contextlib/contextlib.iml" filepath="$PROJECT_DIR$/lib/contextlib/contextlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/frescolib/frescolib.iml" filepath="$PROJECT_DIR$/lib/frescolib/frescolib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/grantlib/grantlib.iml" filepath="$PROJECT_DIR$/lib/grantlib/grantlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/jsonlib/jsonlib.iml" filepath="$PROJECT_DIR$/lib/jsonlib/jsonlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/maillib/maillib.iml" filepath="$PROJECT_DIR$/lib/maillib/maillib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/okhttplib/okhttplib.iml" filepath="$PROJECT_DIR$/lib/okhttplib/okhttplib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/ottolib/ottolib.iml" filepath="$PROJECT_DIR$/lib/ottolib/ottolib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirdlib/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/thirdlib/ptr-lib/ptr-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/retrofitlib/retrofitlib.iml" filepath="$PROJECT_DIR$/lib/retrofitlib/retrofitlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/routerlib/routerlib.iml" filepath="$PROJECT_DIR$/lib/routerlib/routerlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/suppertlib/suppertlib.iml" filepath="$PROJECT_DIR$/lib/suppertlib/suppertlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirdlib/thirdlib.iml" filepath="$PROJECT_DIR$/thirdlib/thirdlib.iml" />
     </modules>
   </component>
 </project>

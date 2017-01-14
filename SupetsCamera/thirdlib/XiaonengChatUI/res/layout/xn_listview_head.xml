@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@null" >
+
+    <LinearLayout
+        android:id="@+id/ll_headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/pb_loadmore"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@anim/progress_smallround"
+            android:visibility="gone" >
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/tv_loadmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/xn_sdk_nomoreinfo"
+            android:textColor="@color/xn_gray"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

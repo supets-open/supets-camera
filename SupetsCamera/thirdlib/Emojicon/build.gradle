@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'maven'
+group = 'com.supets.thirdlib'
+version = '2.0.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'http://localhost:8081/nexus/content/repositories/supet') {
+                authentication(userName: "admin", password: "admin123")
+            }
+        }
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
+
+    lintOptions {
+        abortOnError false
+        ignoreWarnings true
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        instrumentTest.setRoot('tests')
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['**.*'])
+    compile 'com.android.support:appcompat-v7:23.0.0'
+}

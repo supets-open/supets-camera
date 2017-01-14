@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoneng.xnchatui"
+    android:versionCode="1"
+    android:versionName="2.1">
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <application>
+        <!--客服系统-->
+        <activity
+            android:name="cn.xiaoneng.activity.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.xiaoneng.activity.LeaveMsgActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.activity.ShowCameraActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogTopRight" />
+        <activity
+            android:name="cn.xiaoneng.activity.ShowAlbumActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.activity.ValuationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/valuationdialog" />
+        <activity
+            android:name="cn.xiaoneng.activity.ShowPictureActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.activity.XNExplorerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+    </application>
+</manifest>

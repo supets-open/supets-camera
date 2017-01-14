@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 可替换的色值 start-->
+    <color name="xn_sdk_head_bg">#32a7f5</color>
+    <color name="xn_text_color">#000000</color>
+    <color name="xn_centercontent">#f3f3f7</color>
+    <color name="xn_press_text">#999999</color>
+    <color name="xn_edge">#d4d4d4</color>
+    <color name="xn_function_bg">#f9f9f9</color>
+    <color name="xn_function_text">#808080</color>
+     <!-- 可替换的色值 end-->
+     
+    <color name="xn_white">#FFFFFF</color>
+    <color name="xn_blue">#0066FF</color>
+    <color name="xn_no_color">#000000</color>
+    <color name="xn_bg_color">#f8f8f8</color>
+    <color name="xn_bg_color_deep">#E5E5E5</color>
+    <color name="xn_black">#333333</color>
+    <color name="xn_grey">#666666</color>
+    <color name="xn_black_half">#50000000</color>
+    <color name="xn_red">#FFFF0000</color>
+    <color name="xn_background_color">#f2f2f2</color>
+    <color name="xn_transparent">@android:color/transparent</color>
+    <color name="xn_user_list_public_bg">#e5e6e7</color>
+    <color name="xn_normal_text">#FF758493</color>
+    <color name="xn_username_color">#333333</color>
+    <color name="xn_sdk_chat_left_color">#BFBFBF</color>
+    <color name="xn_sdk_sendtime_color">#888888</color>
+    <color name="xn_sdk_chat_right_color">#BFBFBF</color>
+    <color name="xn_sdk_chat_face_color">#f6f5f5</color>
+    <color name="xn_sdk_chat_ll_facechoose_color">#fafafa</color>
+    <color name="xn_sdk_chat_ll_pluschoose_color">#f6f5f5</color>
+    <color name="xn_sdk_edittext_normal">#b1bbc7</color>
+    <color name="xn_gray">#8C8C8C</color>
+    <color name="xn_tips">#FAF9DE</color>
+    <color name="xn_bg_goods">#d4d4d4</color>
+    <color name="xn_card_title">#323232</color>
+    <!-- <color name="xn_release_text">#999999</color> -->
+</resources>

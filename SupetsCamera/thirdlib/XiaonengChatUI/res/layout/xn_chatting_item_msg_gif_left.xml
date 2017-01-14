@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+	<TextView
+        android:id="@+id/tv_l_gif_sendtime"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="sssss"
+        android:textSize="12sp" />
+    <RelativeLayout
+        android:id="@+id/rl_l_gif_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/tv_l_gif_sendtime"
+        android:focusable="true" >
+
+        <cn.xiaoneng.uiview.CustomImageView
+            android:id="@+id/iv_l_gif_userhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:src="@drawable/kefu" />
+
+        <RelativeLayout
+            android:id="@+id/l_rl_gif_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/iv_l_gif_userhead"
+            android:focusable="true" >
+
+            <TextView
+                android:id="@+id/l_gif_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xn_black"
+                android:text="2222" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_l_gif_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_rl_gif_name"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/iv_l_gif_userhead"
+            android:background="@drawable/l2"
+            android:focusable="true" >
+
+            <WebView
+                android:id="@+id/wv_l_gif_picture"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

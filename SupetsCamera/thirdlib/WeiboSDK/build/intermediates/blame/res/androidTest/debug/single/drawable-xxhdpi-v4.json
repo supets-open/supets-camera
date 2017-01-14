@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_with_account_text_pressed.png",
+        "source": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_with_account_text_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_button_with_frame_logo_pressed.png",
+        "source": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_button_with_frame_logo_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_with_account_text_focused.png",
+        "source": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_with_account_text_focused.png"
+    },
+    {
+        "merged": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_button_with_frame_logo_focused.png",
+        "source": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_button_with_frame_logo_focused.png"
+    },
+    {
+        "merged": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_button_with_frame_logo_normal.png",
+        "source": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_button_with_frame_logo_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_with_account_text_normal.png",
+        "source": "C:\\Users\\lihongjiang\\Documents\\GitHub\\supets-camera\\SupetsCamera\\thirdlib\\WeiboSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_com_sina_weibo_sdk_login_with_account_text_normal.png"
+    }
+]

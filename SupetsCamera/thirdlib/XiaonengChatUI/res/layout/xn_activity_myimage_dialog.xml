@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_bigpicture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xn_black"
+    android:focusable="false" >
+
+    <WebView
+        android:id="@+id/wv_biggif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/show_image_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/pic_icon" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/ll_pic_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/xn_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_pic_back"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/xn_myimage_back"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/xn_black" />
+
+        <TextView
+            android:id="@+id/tv_stolocal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/xn_myimage_savelocal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/xn_black" />
+    </LinearLayout>
+
+</RelativeLayout>

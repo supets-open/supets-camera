@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\lihongjiang\Documents\GitHub\supets-camera\SupetsCamera\thirdlib\WeiboSDK\assets"/><source path="C:\Users\lihongjiang\Documents\GitHub\supets-camera\SupetsCamera\thirdlib\WeiboSDK\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\lihongjiang\Documents\GitHub\supets-camera\SupetsCamera\thirdlib\WeiboSDK\build-types\debug\assets"/></dataSet></merger>

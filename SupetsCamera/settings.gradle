@@ -1,13 +1,27 @@
 include ':app'
+//  已经完成
+include ':lib:suppertlib'
+include ':lib:ottolib'
+include ':lib:contextlib'
+include ':lib:jsonlib'
+include ':lib:okhttplib'
+include ':lib:retrofitlib'
+include ':lib:frescolib'
+include ':lib:grantlib'
+include ':lib:routerlib'
+include ':lib:maillib'
+include ':commons:commonutils'
+include ':commons:commonui'
+include ':thirdlib:Emojicon'
+include ':thirdlib:XiaonengChatUI'
+include ':thirdlib:MotuSDKLib'
+include ':thirdlib:WeiboSDK'
+include ':thirdlib:ptr-lib'
+include ':thirdlib:PushSDK'
 
-include ':supetscontext'
-include ':jsonlibrary'
-include ':okhttplibrary'
-include ':SupetsCommons'
-include ':frescolibrary'
-include ':cameralibrary'
-include ':multiimageselector'
-include ':croplibrary'
-
-
+//  计划中
+//include ':module:cameralib'
+//include ':module:photolib'
+//include ':module:croplib'
+//include ':thirdlib:threepartybase'
 

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <WebView
+        android:id="@+id/wv_xn_explorer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_explorer_top"
+        android:layout_above="@+id/rl_explorer_bottom"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_explorer_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/xn_sdk_head_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rl_explorer_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp" >
+
+            <ImageView
+                android:id="@+id/iv_explorer_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/chat_headback" />
+
+            <TextView
+                android:id="@+id/tv_explorer_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/iv_explorer_back"
+                android:text="@string/xn_chatpage_back1"
+                android:textColor="@color/xn_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_explorer_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/xn_sdk_head_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rl_explorer_bachorgo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp" >
+
+            <ImageView
+                android:id="@+id/iv_explorer_back2"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/chat_headback" />
+
+            <ImageView
+                android:id="@+id/iv_explorer_go2"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/chat_head2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

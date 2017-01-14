@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 服务器网址配置：线上环境 -->
+    <xn_flashserver_url_online>http://downt.ntalker.com/t2d/func/getflashserver.php</xn_flashserver_url_online>
+    <!-- 服务器网址配置：研发环境 -->
+    <xn_flashserver_url_rd>http://release-rd1.ntalker.com:10/t2d/func/getflashserver.php</xn_flashserver_url_rd>
+    <!-- 服务器网址配置：测试环境 -->
+    <xn_flashserver_url_test>http://downt-test.ntalker.com/t2d/func/getflashserver.php</xn_flashserver_url_test>
+    <!-- SP存储文件名配置 -->
+    <xn_spname>XNSDKStore1.0</xn_spname>
+    
+    <!-- 下面的几项配置由集成小能SDK的用户完成 -->
+    
+    <!-- 图片存储路径配置 -->
+    <xn_pic_dir>/xnlocalstorage/picture/</xn_pic_dir>
+    <!-- 缩略图存储路径配置 -->
+    <xn_pic_thumb_dir>/xnlocalstorage/picture/thumb/</xn_pic_thumb_dir>
+    <!-- 语音存储路径配置 -->
+    <xn_audio_dir>/xnlocalstorage/recordaudio/</xn_audio_dir>
+    <!-- 用户文件存储路径配置 -->
+    <xn_file_dir>/xnlocalstorage/file/</xn_file_dir>
+    <!-- 用户图片存储路径配置 -->
+    <xn_pic_user_manage_dir>/xnuserstorage/</xn_pic_user_manage_dir>
+    <!-- 轨迹会话超时时长配置 -->
+    <xn_trailsessionrefreshtime>24</xn_trailsessionrefreshtime>
+    
+</config>

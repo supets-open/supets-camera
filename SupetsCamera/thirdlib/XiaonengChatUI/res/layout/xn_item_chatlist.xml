@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sdk_list_item" >
+
+    <cn.xiaoneng.uiview.CircleView
+        android:id="@+id/iv_kfhead"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/kefu" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_kefu_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:layout_toRightOf="@+id/iv_kfhead"
+        android:layout_marginTop="6dp">
+        
+        <ImageView
+            android:id="@+id/iv_msgtx"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="6dp"
+	    	android:layout_marginLeft="4dp"
+	    	android:src="@drawable/msgtx"
+	    	/>
+         >
+
+        <TextView
+            android:id="@+id/tv_csgroupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:text="@string/xn_chatlist_csgroupname"
+            android:textColor="@color/xn_text_color" />
+
+        
+        <TextView
+            android:id="@+id/tv_lastmsgtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/xn_chatlist_lastmsgtime"
+            android:textSize="12sp"
+            />
+        
+    </RelativeLayout>
+	<TextView
+            android:id="@+id/tv_lastmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_kfhead"
+            android:layout_marginLeft="20dp"
+            android:text="@string/xn_chatlist_lastmsg"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_below="@+id/rl_kefu_time"
+            android:layout_marginTop="6dp"
+            />
+</RelativeLayout>

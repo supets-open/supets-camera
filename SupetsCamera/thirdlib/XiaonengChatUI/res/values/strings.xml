@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APP -->
+    <string name="xn_inputfunction_select">图片@拍照@评价</string>
+    <string name="xn_find_mylocation">寻找我的位置</string>
+    <string name="xn_recent_person">最近联系人</string>
+    <string name="xn_remove_visitor">确定解除黑名单吗？</string>
+    <string name="xn_refuse_visitor">是否加入黑名单？</string>
+    <string name="xn_showphoto_title">发送中...</string>
+    <string name="xn_phasebook_text">常用语</string>
+    <string name="xn_consultation_text">咨询总结</string>
+    <string name="xn_histalk_last">上一次会话</string>
+    <string name="xn_histalk_next">下一次会话</string>
+    <string name="xn_mylocation">我的位置</string>
+    <string name="xn_toast_nointernet">当前网络不可用，请检查网络设置！</string>
+    <string name="xn_toast_netexception">当前网络异常</string>
+    <string name="xn_toast_imagetoobig">图片太大，加载失败</string>
+    <string name="xn_toast_getservicefail">获取服务器列表失败</string>
+    <string name="xn_toast_nonet">没有网络连接</string>
+    <string name="xn_toast_submit">提交</string>
+    <string name="xn_toast_callcsfalse">获取客服失败</string>
+    <string name="xn_toast_paramserror">传入参数错误</string>
+    <string name="xn_toast_formaterror">传入JSON字符串格式错误</string>
+    <string name="xn_text_pulldown">下拉刷新</string>
+    <string name="xn_text_refresh">正在刷新...</string>
+    <string name="xn_text_recentlyupdate">最近更新:</string>
+    <string name="xn_toast_filempty">录音文件不完整或已损坏</string>
+    <string name="xn_action_Tchat">由于你长时间未进行会话,已经与客服断开连接</string>
+    <string name="xn_tt_leavemsgtip_nikname">请输入昵称</string>
+    <string name="xn_tt_leavemsgtip_phoneormail">请填写手机号码或者邮箱</string>
+    <string name="xn_tt_leavemsgtip_failed">留言失败,连接服务器失败</string>
+    <string name="xn_tt_userid_is_illegal">userid不合法，请重新传入</string>
+    <string name="xn_tt_username_is_illegal">username不合法，请重新传入</string>
+    <string name="xn_tt_voicetip_tooshort">时间太短   录音失败</string>
+    <string name="xn_tt_voicetip_stopfailed">关闭录音出错</string>
+    <string name="xn_tt_openspecifiedactivity_fail">可以在这里提示用户没有找到应用程序，或者是做其他的操作！</string>
+    <string name="xn_tt_clearcache_success">成功清空本地缓存...</string>
+    <string name="xn_notify_newmsg">您有新消息哦！</string>
+    <string name="xn_demoexit">退出</string>
+    <string name="xn_newmsg_num">条新消息</string>
+    <string name="xn_sdk_tryuse">试用</string>
+    <string name="xn_chatpage_blacklist">该用户被加入黑名单，消息已被屏蔽！</string>
+    <string name="xn_chatlist_csgroupname">客服组名称</string>
+    <string name="xn_chatlist_lastmsgtime">最后一条消息时间</string>
+    <string name="xn_chatlist_lastmsg">最后一条消息</string>
+    <string name="xn_transferui_tip1">有客服把一个访客转接给您，是否接收该对话</string>
+    <string name="xn_transferui_tip2">客服</string>
+    <string name="xn_transferui_tip3">将访客</string>
+    <string name="xn_transferui_tip4">转接给您，是否接收该对话?</string>
+    <string name="xn_transferui_tip5">有客服邀请您一起接待访客，是否加入该对话</string>
+    <string name="xn_transferui_tip6">邀请您接待访客</string>
+    <string name="xn_transferui_tip7">，是否加入该对话?</string>
+    <string name="xn_functionSettingsBody4">常用语</string>
+    <string name="xn_functionSettingsBody5">邀请评价</string>
+    <string name="xn_functionSettingsBody6">黑名单</string>
+    <string name="xn_functionSettingsBody7">咨询总结</string>
+    <string name="xn_switch_succeed">您已成功拒绝转接邀请!</string>
+    <string name="xn_chatpage_transferkefu">客服 张宁宁将 访客转接给您，是否接收该对话</string>
+
+    <!-- SDK -->
+
+
+    <!-- xn_activity_valuationpage.xml -->
+    <string name="xn_require_evaluation">感谢您的支持，请评价</string>
+    <string name="xn_ad_appraise_vg">非常满意</string>
+    <string name="xn_ad_appraise_good">满意</string>
+    <string name="xn_ad_appraise_normal">一般</string>
+    <string name="xn_ad_appraise_bad">不满意</string>
+    <string name="xn_ad_appraise_vb">非常不满意</string>
+    <string name="xn_ad_questionstatus">问题解决状态</string>
+    <string name="xn_val_going">跟进中</string>
+    <string name="xn_val_done">已解决</string>
+    <string name="xn_val_no">未解决</string>
+    <string name="xn_adviseandfeedback">建议与反馈</string>
+    <string name="xn_valuation_suggestion_hint">建议</string>
+
+    <!-- xn_activity_valuationpage.xml,xn_activity_leavemsgpage.xml -->
+    <string name="xn_submit">提交</string>
+
+    <!-- xn_activity_leavemsgpage.xml,xn_dialog_leavemsg.xml -->
+    <string name="xn_leave">亲！客服不在线，请留言！</string>
+    <string name="xn_leave_message">留言</string>
+
+    <!-- xn_dialog_leavemsg.xml -->
+    <string name="xn_leavemsg_dialogback">返回</string>
+    <string name="xn_getservicefail">请求服务失败，请联系服务商</string>
+
+    <!-- xn_activity_leavemsgpage.xml -->
+    <string name="xn_input_pe">请输入手机号码或者邮箱</string>
+    <string name="xn_toast_cancel">返回</string>
+    <string name="xn_leavemesg_words_hint">留言</string>
+    <string name="xn_leavemesg_name_hint">姓名</string>
+    <string name="xn_leavemesg_tel_hint">电话</string>
+    <string name="xn_leavemesg_email_hint">邮箱</string>
+
+    <!-- xn_activity_my_pg_bar.xml -->
+    <string name="xn_leavingmsg">正在留言</string>
+
+    <!-- xn_activity_chatpage.xml -->
+    <string name="xn_chatpage_kfname">客户名称</string>
+    <string name="xn_queuing_tips1">抱歉，人数过多您排在第</string>
+    <string name="xn_queuing_tips2">位     点击留言！</string>
+    <string name="xn_chatActivity_tipString1">亲！当前无网络连接哦！</string>
+    <string name="xn_chatActivity_tipString3">客服不在线    点击留言！</string>
+    <string name="xn_chatActivity_tipString4">正在建立会话...</string>
+    <string name="xn_kefu_versiontip">SDK版本号:</string>
+    <string name="xn_chatActivity_tryout">(试用)</string>
+
+    <!-- xn_custom_facerelativelayout.xml -->
+    <string name="xn_custom_send">发送</string>
+    <string name="xn_sdk_presstalk">按住说话</string>
+    <string name="xn_sdk_loosestop">松开结束</string>
+
+    <!-- xn_message_function_layout.xml -->
+    <string name="xn_sdk_havevaluation">已评价</string>
+        <string name="xn_functionSettingsBody1">图片</string>
+    <string name="xn_functionSettingsBody2">拍照</string>
+    <string name="xn_functionSettingsBody3">评价</string>
+    
+    <!-- xn_listview_head.xml -->
+    <string name="xn_sdk_nomoreinfo">没有更多聊天内容...</string>
+    <string name="xn_sdk_moreinfo">加载更多...</string>
+
+    <!-- xn_activity_chatpage.xml,xn_activity_explorer.xml -->
+    <string name="xn_chatpage_back1">返回</string>
+
+    <!-- xn_activity_myimage_dialog.xml -->
+    <string name="xn_myimage_back">返回</string>
+    <string name="xn_myimage_savelocal">保存到本地</string>
+
+    <!-- xn_normal_dialog.xml -->
+    <string name="xn_normaldialog_title">提    示</string>
+    <string name="xn_contact_provider">获取服务失败，请联系服务商！</string>
+    <string name="xn_cancel_queue">您好，是否放弃排队？</string>
+    <string name="xn_close_chat_session">确定结束对话</string>
+
+    <!-- xn_popupwindow_copy.xml -->
+    <string name="xn_copy">复制</string>
+    <string name="xn_copylink">复制链接</string>
+
+    <!-- xn_activity_valuationpage.xml,xn_chatting_item_msg_system.xml -->
+    <string name="xn_valuation">评价</string>
+
+
+    <!-- xn_activity_valuationpage.xml,xn_normal_dialog.xml -->
+    <string name="xn_cancel">取消</string>
+    <string name="xn_confirm">确定</string>
+
+    <!-- Toast -->
+    <string name="xn_noevaluat">您还不能对本次会话进行评价，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_content">请填写留言内容，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_name">请填写您的姓名，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_truephone">请填写正确的手机号，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_trueemail">请填写正确的邮箱，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_righttext">不能输入特殊字符</string>
+    <string name="xn_tt_leavemsgtip_success">留言成功,我们会尽快联系您</string>
+    <string name="xn_tt_leavemsg_failed">留言失败</string>
+    <string name="xn_toast_errorinput">请不要输入空字符</string>
+    <string name="xn_toast_authority">亲,还没开启录音权限哦</string>
+    <string name="xn_valuationtip_hasposted">您的评价已提交,谢谢</string>
+    <string name="xn_inputtext_size">您输入的字数已经超过了400字限制！</string>
+    <string name="xn_inputvaluatuion_maxsize">评价内容不能超过200个字符</string>
+    <string name="xn_inputleavemsg_maxsize">留言内容不能超过400个字符</string>
+    <string name="xn_toast_sendfail">发送失败</string>
+    <string name="xn_toast_getpicturefailed">找不到图片</string>
+    <string name="xn_tt_sdcardtip_nowriteright">获取存储权限失败</string>
+    <string name="xn_tt_cameratip_nofindapplication">没有找到相关应用或拍照权限被禁止</string>
+    <string name="xn_tt_cameratip_creatfilefailed">创建照片文件失败</string>
+    <string name="xn_tt_cameratip_getfilefailed">获取照片文件失败</string>
+    <string name="xn_tt_cameratip_cancel">拍照已取消</string>
+    <string name="xn_tt_savepicture_success">保存成功</string>
+
+    <!-- xn_dialog_myvioce.xml -->
+    <string name="xn_releasetotalk">松开手指，取消发送</string>
+    <string name="xn_fingerslip_totalk">手指上滑，取消发送</string>
+    <string name="xn_tooshort">说话时间太短</string>
+    
+     <!-- 系统消息提示 -->
+    <string name="xn_historyinfo">以上是历史消息</string>
+    <string name="xn_kefu_leave">您好！客服不在线</string>
+    <string name="xn_kefu_leave2">您好！客服不在线，请</string>
+    <string name="xn_leave_queue">您好！客服忙碌中，您排在第</string>
+    <string name="xn_leave_queue3">位请稍后或</string>
+    <string name="xn_valuation_submit">评价提交成功！</string>
+    
+    <string name="xn_queuing_toast">亲！客服忙碌中，请稍后！</string>
+	<string name="xn_requestkf">正在请求客服...</string>
+	
+	<string name="xn_btn_yes">是</string>
+	<string name="xn_btn_no">否</string>
+	
+	<string name="xn_netinvalid_valuation">亲！无网络，评价暂时不可提交</string>
+</resources>

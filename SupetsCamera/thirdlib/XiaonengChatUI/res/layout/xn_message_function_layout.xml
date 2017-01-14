@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:background="@color/xn_function_bg" >
+
+    <LinearLayout
+        android:id="@+id/ll_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/messageFunctionBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/messageFunctionName"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/xn_valuation"
+            android:textColor="@color/xn_function_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ll_function"
+        android:background="@color/xn_function_bg" >
+    </LinearLayout>
+
+</RelativeLayout>

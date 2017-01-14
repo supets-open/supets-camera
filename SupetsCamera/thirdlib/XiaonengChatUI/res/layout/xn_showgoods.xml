@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/showgoodslayout"
+    >
+
+    <WebView
+        android:id="@+id/wv_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:adjustViewBounds="true"
+        android:background="#d4d4d4"
+        android:overScrollMode="never"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="8dp"
+        android:clickable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/visitor" 
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_goods"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="false" >
+
+        <TextView
+            android:id="@+id/tv_goodsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="99999999"
+            android:textColor="@color/xn_black"
+            android:textSize="16sp" 
+            />
+
+        <TextView
+            android:id="@+id/tv_goodsprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:text="231"
+            android:textColor="@color/xn_red"
+            android:textSize="16sp" 
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

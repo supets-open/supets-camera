@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/com.xiaoneng.xnlibrary"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+      <TextView
+        android:id="@+id/tv_lt_sendtime"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="sssss"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/tv_lt_sendtime"
+        android:clickable="false"
+        android:focusable="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_lt_sendcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <cn.xiaoneng.uiview.CustomImageView
+                android:id="@+id/div_userhead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:clickable="false"
+                android:src="@drawable/kefu" />
+
+            <RelativeLayout
+                android:id="@+id/l_rl_text_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/div_userhead"
+                android:focusable="true" >
+
+                <TextView
+                    android:id="@+id/l_text_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2222"
+                    android:textColor="@color/xn_black"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_rl_text_uname"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/div_userhead"
+                android:autoLink="all"
+                android:background="@drawable/l22"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/xn_black"
+                android:textSize="15sp" />
+            
+              <RelativeLayout
+                android:id="@+id/xncard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_rl_text_uname"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="4dp"
+                android:layout_toRightOf="@id/div_userhead"
+                android:background="@drawable/newl22" 
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:id="@+id/copyurl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                     >
+
+                    <TextView
+                        android:id="@+id/foreText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:paddingLeft="14dp"
+                    	android:paddingTop="8dp"
+                   		android:paddingRight="4dp"
+                        android:clickable="false"
+                        android:text="请查看一下链接请查看一下链接请查看一下链接请查看一下链接："
+                        android:textColor="@color/xn_black"
+                        android:textSize="14sp" />
+                    <View 
+                        android:id="@+id/gray_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="7dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shadoww"
+                        
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/cardImg"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="3dp"
+                            android:clickable="false"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/failed" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:layout_marginLeft="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/cardTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="dddddddddddddddddddd"
+                                android:textColor="@color/xn_card_title"
+                                android:textSize="14sp" />
+                            
+                             <TextView
+                                android:id="@+id/cardDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:ellipsize="end"
+                                android:layout_marginTop="4dp"
+                                android:maxLines="2"
+                                android:text="ddddddddddd"
+                                android:textColor="#999999"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

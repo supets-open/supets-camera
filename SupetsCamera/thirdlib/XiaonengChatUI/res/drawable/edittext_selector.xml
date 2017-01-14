@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_focused="true" 
+android:drawable="@drawable/edittext_pressed" /><!--选中时效果图-->
+
+<item android:state_focused="false"
+android:drawable="@drawable/edittext_normal" /><!--未选中时效果图-->
+
+</selector>
