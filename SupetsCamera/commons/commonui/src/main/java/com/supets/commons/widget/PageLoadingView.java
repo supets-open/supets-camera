@@ -4,23 +4,23 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.supets.commons.R;
-import com.supets.commons.utils.UIUtils;
 
 /**
  * <b>PageLoadingView 页面加载控制View</b>
- *<p>
+ * <p>
  * 包括：loading状态、网络错误状态、内容展示状态、空页面展示、以及自己定义的OtherView<br/>
  * </p>
- *
+ * <p>
  * 用法：同ScrollView一样，在布局文件中包裹内容，但是包裹的内容布局有且只有一个根布局<br/>
  *
  * @author Created by WeiDongliang on 2015/12/22.
  */
-public class PageLoadingView extends FrameLayout implements View.OnClickListener{
+public class PageLoadingView extends FrameLayout implements View.OnClickListener {
 
     private static final String EventName = "onEventErrorRefresh";
 
@@ -71,7 +71,7 @@ public class PageLoadingView extends FrameLayout implements View.OnClickListener
     /**
      * 注册网络错误时候，重新加载的回调
      *
-     * @param subscriber 注册事件的当前类
+     * @param subscriber  注册事件的当前类
      * @param requestCode 请求码，区别不同注册者的同一个回调
      */
     public void subscribeRefreshEvent(Object subscriber, Integer requestCode) {
@@ -139,7 +139,7 @@ public class PageLoadingView extends FrameLayout implements View.OnClickListener
     }
 
     /**
-     *设置空页面的提示语
+     * 设置空页面的提示语
      *
      * @param text
      */
@@ -161,7 +161,7 @@ public class PageLoadingView extends FrameLayout implements View.OnClickListener
      *
      * @return
      */
-    public View getEmptyView () {
+    public View getEmptyView() {
         return mEmpty;
     }
 
@@ -186,7 +186,9 @@ public class PageLoadingView extends FrameLayout implements View.OnClickListener
         }
 
         if (empty.getParent() != this) {
-            UIUtils.removeFromParent(empty);
+            if (empty.getParent() != null) {
+                ((ViewGroup) empty.getParent()).removeView(empty);
+            }
             addView(empty);
         }
 
@@ -229,6 +231,7 @@ public class PageLoadingView extends FrameLayout implements View.OnClickListener
 
     /**
      * 是否展示内容页面
+     *
      * @param show
      */
     public void showContent(boolean show) {
@@ -247,6 +250,7 @@ public class PageLoadingView extends FrameLayout implements View.OnClickListener
 
     /**
      * 是否展示空页面
+     *
      * @param show
      */
     public void showEmpty(boolean show) {
@@ -275,7 +279,7 @@ public class PageLoadingView extends FrameLayout implements View.OnClickListener
     }
 
     /**
-     *展示指定的View
+     * 展示指定的View
      *
      * @param view 传入指定想展示的View
      */
@@ -314,13 +318,13 @@ public class PageLoadingView extends FrameLayout implements View.OnClickListener
     }
 
 
-    public View getVisibleChildView(){
+    public View getVisibleChildView() {
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
-           View view=getChildAt(i);
-           if (view!=null&&view.getVisibility()==View.VISIBLE){
-               return view;
-           }
+            View view = getChildAt(i);
+            if (view != null && view.getVisibility() == View.VISIBLE) {
+                return view;
+            }
         }
         return null;
     }
