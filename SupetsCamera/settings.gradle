@@ -18,6 +18,7 @@ include ':thirdlib:MotuSDKLib'
 include ':thirdlib:WeiboSDK'
 include ':thirdlib:ptr-lib'
 include ':thirdlib:PushSDK'
+include ':thirdlib:volloylib'
 
 //  计划中
 //include ':module:cameralib'

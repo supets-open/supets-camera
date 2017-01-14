@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/lib/routerlib/routerlib.iml" filepath="$PROJECT_DIR$/lib/routerlib/routerlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/suppertlib/suppertlib.iml" filepath="$PROJECT_DIR$/lib/suppertlib/suppertlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/thirdlib/thirdlib.iml" filepath="$PROJECT_DIR$/thirdlib/thirdlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirdlib/volloylib/volloylib.iml" filepath="$PROJECT_DIR$/thirdlib/volloylib/volloylib.iml" />
     </modules>
   </component>
 </project>

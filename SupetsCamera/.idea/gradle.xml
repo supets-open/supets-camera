@@ -30,6 +30,7 @@
             <option value="$PROJECT_DIR$/thirdlib/WeiboSDK" />
             <option value="$PROJECT_DIR$/thirdlib/XiaonengChatUI" />
             <option value="$PROJECT_DIR$/thirdlib/ptr-lib" />
+            <option value="$PROJECT_DIR$/thirdlib/volloylib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
