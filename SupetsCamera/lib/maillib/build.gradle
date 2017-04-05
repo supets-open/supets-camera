@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
 group = 'com.supets.lib'
+
 version = '2.1.0'
 
 uploadArchives {
