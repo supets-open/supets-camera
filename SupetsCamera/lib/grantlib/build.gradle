@@ -4,7 +4,7 @@ apply plugin: 'com.android.library'
 
 apply plugin: 'maven'
 group = 'com.supets.lib'
-version = '2.0.0'
+version = '2.1.0'
 
 uploadArchives {
     repositories {
@@ -27,8 +27,9 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
         versionCode 1
         versionName "1.0"
     }
@@ -44,5 +45,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
 
-    compile 'com.supets.lib:suppertlib:2.0.0'
+    compile "com.supets.lib:suppertlib:${rootProject.ext.supportLibVersion}"
+
 }

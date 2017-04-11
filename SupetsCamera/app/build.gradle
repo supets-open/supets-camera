@@ -11,10 +11,12 @@ android {
 
     defaultConfig {
         applicationId "com.supets.pet.supetscamera"
-        minSdkVersion 9
-        targetSdkVersion 23
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

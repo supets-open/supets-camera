@@ -3,7 +3,7 @@
 buildscript {
     repositories {
         jcenter()
-        maven { url( 'http://localhost:8081/nexus/content/groups/public') }
+        maven { url('http://localhost:8081/nexus/content/groups/public') }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
@@ -14,21 +14,23 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven { url( 'http://localhost:8081/nexus/content/groups/public') }
+        maven { url('http://localhost:8081/nexus/content/groups/public') }
     }
 }
 
 //定义整个工程的build版本和java版本
 ext {
-    compileSdkVersion = 23
-    buildToolsVersion = "23.0.3"
-
     sourceCompatibility = JavaVersion.VERSION_1_7
     targetCompatibility = JavaVersion.VERSION_1_7
 
-    minSdkVersion =9
+    minSdkVersion = 9
     targetSdkVersion = 16
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.2"
+    supportLibVersion = "25.3.0"
 }
+
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

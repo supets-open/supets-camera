@@ -23,8 +23,9 @@ android {
         targetCompatibility rootProject.ext.targetCompatibility
     }
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
         versionCode 1
         versionName "1.0"
 
