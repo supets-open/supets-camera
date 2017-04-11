@@ -14,8 +14,8 @@ public class MailUtil {
     static int port = 25;
     static String server = "smtp.163.com";
     static String from = "疯狂桔子安卓团队";
-    static String user = "lihongjiang421630@163.com";
-    static String password = "lhj628315abc";
+    static String user = "";
+    static String password = "";
     public static String to = "lihongjiang@supets.com";
 
     public static void setPort(int port) {
