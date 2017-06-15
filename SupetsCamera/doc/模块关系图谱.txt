@@ -1,0 +1,21 @@
+include ':lib:suppertlib'
+include ':lib:ottolib'
+include ':lib:contextlib'
+include ':lib:jsonlib'
+include ':lib:okhttplib'
+include ':lib:retrofitlib'  jsonlib  okhttplib
+include ':lib:frescolib'   contextlib okhttplib
+include ':lib:grantlib'     suppertlib
+include ':lib:routerlib'   contextlib
+include ':lib:maillib'
+include ':commons:commonutils'  contextlib  suppertlib
+include ':commons:commonui'     suppertlib
+
+
+include ':thirdlib:Emojicon'   suppertlib
+include ':thirdlib:XiaonengChatUI'
+include ':thirdlib:MotuSDKLib'
+include ':thirdlib:WeiboSDK'
+include ':thirdlib:ptr-lib'
+include ':thirdlib:PushSDK'
+include ':thirdlib:volloylib'
