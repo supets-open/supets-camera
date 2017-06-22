@@ -9,37 +9,6 @@ import android.text.TextUtils;
 
 class UINavBase {
 
-    private static final String Key_Back_Stack = "backStack";
-    private static final String Key_Start_Stack = "startStack";
-
-    public static void setNavigationStartStack(Intent oldIntent, Intent intent, Context context) {
-        NavigationStack stack = parseNavigationStartStack(oldIntent);
-        if (stack == null) {
-            stack = new NavigationStack();
-            stack.setClassName(context.getClass().getName());
-        }
-        intent.putExtra(Key_Start_Stack, stack);
-    }
-
-    public static String parseDataString(Intent intent, String key) {
-        Uri uri = intent.getData();
-        return uri != null ? uri.getQueryParameter(key) : null;
-    }
-
-    /**
-     * 解析调用activity @nullable
-     **/
-    public static NavigationStack parseNavigationStartStack(Intent intent) {
-        return (NavigationStack) intent.getSerializableExtra(Key_Start_Stack);
-    }
-
-    /**
-     * 解析调用activity @nullable
-     **/
-    public static NavigationStack parseNavigationBackStack(Intent intent) {
-        return (NavigationStack) intent.getSerializableExtra(Key_Back_Stack);
-    }
-
     /**
      * 关闭当前activity
      * 没有返回值
@@ -54,10 +23,6 @@ class UINavBase {
      * 调用onActivityResult
      **/
     public static void popActivityResult(Activity activity, int resultCode, Intent intent) {
-        NavigationStack stack = new NavigationStack();
-        stack.setClassName(activity.getClass().getName());
-        intent.putExtra(Key_Back_Stack, stack);
-
         activity.setResult(resultCode, intent);
         activity.finish();
     }
@@ -67,9 +32,6 @@ class UINavBase {
      * 没有返回值
      **/
     protected static void push(Context context, Intent intent) {
-        NavigationStack stack = new NavigationStack();
-        stack.setClassName(context.getClass().getName());
-        intent.putExtra(Key_Back_Stack, stack);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
@@ -80,9 +42,6 @@ class UINavBase {
      * 调用onActivityResult
      **/
     public static void pushActivityForResult(Activity activity, int requestCode, Intent intent) {
-        NavigationStack stack = new NavigationStack();
-        stack.setClassName(activity.getClass().getName());
-        intent.putExtra(Key_Back_Stack, stack);
         activity.startActivityForResult(intent, requestCode);
     }
 
