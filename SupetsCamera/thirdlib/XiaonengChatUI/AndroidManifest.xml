@@ -11,6 +11,7 @@
         <activity
             android:name="cn.xiaoneng.activity.ChatActivity"
             android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" />
         <activity
             android:name="cn.xiaoneng.activity.LeaveMsgActivity"
