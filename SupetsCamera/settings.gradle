@@ -19,7 +19,7 @@ include ':thirdlib:WeiboSDK'
 include ':thirdlib:ptr-lib'
 include ':thirdlib:PushSDK'
 include ':thirdlib:volloylib'
-
+include ':thirdlib:PushSDK311'
 //  计划中
 //include ':module:cameralib'
 //include ':module:photolib'
