@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="GifMoviewView">
-        <attr name="gif" format="reference" />
-        <attr name="paused" format="boolean" />
-    </declare-styleable>
-    <declare-styleable name="CustomTheme">
-        <attr name="gifMoviewViewStyle" format="reference" />
-    </declare-styleable>
-    <declare-styleable name="PowerImageView">
-        <attr name="auto_play" format="boolean"></attr>
-    </declare-styleable>
-    <declare-styleable name="roundedimageview">
+    <declare-styleable name="XNRoundedimageview">
         <attr name="border_thickness" format="dimension" />
         <attr name="border_inside_color" format="color" />
         <attr name="border_outside_color" format="color"></attr>
     </declare-styleable>
-    
-    <declare-styleable name="CircleImageView">
-        <attr name="border_width" format="dimension" />
-        <attr name="border_color" format="color" />
+    <declare-styleable name="XNMovieRecorderView">
+        <!-- 开始是否打开摄像头 -->
+        <attr name="is_open_camera" format="boolean" />
+        <!-- 一次拍摄最长时间 -->
+        <attr name="record_max_time" format="integer" />
+        <!-- 视频分辨率宽度 -->
+        <attr name="record_width" format="integer" />
+        <!-- 视频分辨率高度 -->
+        <attr name="record_height" format="integer" />
     </declare-styleable>
-    
-    <declare-styleable name="CustomImageView">
-        <attr name="roundWidth" format="dimension" />
-        <attr name="roundHeight" format="dimension" />
-    </declare-styleable>	
+
+    <!-- RingProgressBar -->
+    <declare-styleable name="XNRingProgressBar">
+        <attr name="xnstartColor" format="color" />
+        <attr name="xncenterColor" format="color" />
+        <attr name="xnendColor" format="color" />
+        <attr name="xnmax" format="float" />
+        <attr name="xnprogress" format="float" />
+    </declare-styleable>
 </resources>

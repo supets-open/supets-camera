@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cn.xiaoneng.uiview.CustomImageView xmlns:android_xnhead="http://schemas.android.com/apk/res/cn.xiaoneng.uiview.XNCustomImageView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/valuationdialog"
+    android:layout_width="42dp"
+    android:layout_height="42dp"
+    android:layout_alignParentRight="true"
+    android:focusable="false"
+    android:src="@drawable/visitor" />

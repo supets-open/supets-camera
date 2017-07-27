@@ -14,10 +14,8 @@
     <string name="xn_histalk_next">下一次会话</string>
     <string name="xn_mylocation">我的位置</string>
     <string name="xn_toast_nointernet">当前网络不可用，请检查网络设置！</string>
-    <string name="xn_toast_netexception">当前网络异常</string>
     <string name="xn_toast_imagetoobig">图片太大，加载失败</string>
     <string name="xn_toast_getservicefail">获取服务器列表失败</string>
-    <string name="xn_toast_nonet">没有网络连接</string>
     <string name="xn_toast_submit">提交</string>
     <string name="xn_toast_callcsfalse">获取客服失败</string>
     <string name="xn_toast_paramserror">传入参数错误</string>
@@ -74,18 +72,23 @@
     <string name="xn_val_no">未解决</string>
     <string name="xn_adviseandfeedback">建议与反馈</string>
     <string name="xn_valuation_suggestion_hint">建议</string>
-
+    <string name="xn_evaluation_yesorno">是否解决</string>
     <!-- xn_activity_valuationpage.xml,xn_activity_leavemsgpage.xml -->
     <string name="xn_submit">提交</string>
 
     <!-- xn_activity_leavemsgpage.xml,xn_dialog_leavemsg.xml -->
     <string name="xn_leave">亲！客服不在线，请留言！</string>
+    <string name="xn_offline">亲！客服不在线！</string>
+    
     <string name="xn_leave_message">留言</string>
 
     <!-- xn_dialog_leavemsg.xml -->
     <string name="xn_leavemsg_dialogback">返回</string>
     <string name="xn_getservicefail">请求服务失败，请联系服务商</string>
-
+    <string name="xn_tt_leavemsgtip_phone">请输入手机号码</string>
+    <string name="xn_tt_leavemsgtip_email">请输入邮箱</string>
+    <string name="xn_leavemesg_words_hint2">(必填) :</string>
+    <string name="xn_leavemesg_words_hint3">(选填) :</string>
     <!-- xn_activity_leavemsgpage.xml -->
     <string name="xn_input_pe">请输入手机号码或者邮箱</string>
     <string name="xn_toast_cancel">返回</string>
@@ -98,10 +101,9 @@
     <string name="xn_leavingmsg">正在留言</string>
 
     <!-- xn_activity_chatpage.xml -->
-    <string name="xn_chatpage_kfname">客户名称</string>
+    <string name="xn_chatpage_kfname">在线客服</string>
     <string name="xn_queuing_tips1">抱歉，人数过多您排在第</string>
     <string name="xn_queuing_tips2">位     点击留言！</string>
-    <string name="xn_chatActivity_tipString1">亲！当前无网络连接哦！</string>
     <string name="xn_chatActivity_tipString3">客服不在线    点击留言！</string>
     <string name="xn_chatActivity_tipString4">正在建立会话...</string>
     <string name="xn_kefu_versiontip">SDK版本号:</string>
@@ -114,10 +116,14 @@
 
     <!-- xn_message_function_layout.xml -->
     <string name="xn_sdk_havevaluation">已评价</string>
-        <string name="xn_functionSettingsBody1">图片</string>
-    <string name="xn_functionSettingsBody2">拍照</string>
-    <string name="xn_functionSettingsBody3">评价</string>
-    
+    <string name="xn_function_picture">图片</string>
+    <string name="xn_function_camera">拍照</string>
+    <string name="xn_function_evaluate">评价</string>
+	<string name="xn_function_order">订单</string>
+	<string name="xn_function_video">视频</string>
+	<string name="xn_toast_restoreauthority">请开启存储权限</string>
+	<string name="xn_toast_videoauthority">请开启权限</string>
+	<string name="xn_toast_storecamauthority">请开启存储和拍照权限</string>
     <!-- xn_listview_head.xml -->
     <string name="xn_sdk_nomoreinfo">没有更多聊天内容...</string>
     <string name="xn_sdk_moreinfo">加载更多...</string>
@@ -142,7 +148,6 @@
     <!-- xn_activity_valuationpage.xml,xn_chatting_item_msg_system.xml -->
     <string name="xn_valuation">评价</string>
 
-
     <!-- xn_activity_valuationpage.xml,xn_normal_dialog.xml -->
     <string name="xn_cancel">取消</string>
     <string name="xn_confirm">确定</string>
@@ -150,6 +155,8 @@
     <!-- Toast -->
     <string name="xn_noevaluat">您还不能对本次会话进行评价，谢谢！</string>
     <string name="xn_tt_leavemsgtip_content">请填写留言内容，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_1">请填写</string>
+    <string name="xn_tt_leavemsgtip_2">，谢谢！</string>
     <string name="xn_tt_leavemsgtip_name">请填写您的姓名，谢谢！</string>
     <string name="xn_tt_leavemsgtip_truephone">请填写正确的手机号，谢谢！</string>
     <string name="xn_tt_leavemsgtip_trueemail">请填写正确的邮箱，谢谢！</string>
@@ -157,7 +164,7 @@
     <string name="xn_tt_leavemsgtip_success">留言成功,我们会尽快联系您</string>
     <string name="xn_tt_leavemsg_failed">留言失败</string>
     <string name="xn_toast_errorinput">请不要输入空字符</string>
-    <string name="xn_toast_authority">亲,还没开启录音权限哦</string>
+    <string name="xn_toast_authority">亲,还没开启录音或内存卡权限哦</string>
     <string name="xn_valuationtip_hasposted">您的评价已提交,谢谢</string>
     <string name="xn_inputtext_size">您输入的字数已经超过了400字限制！</string>
     <string name="xn_inputvaluatuion_maxsize">评价内容不能超过200个字符</string>
@@ -175,20 +182,42 @@
     <string name="xn_releasetotalk">松开手指，取消发送</string>
     <string name="xn_fingerslip_totalk">手指上滑，取消发送</string>
     <string name="xn_tooshort">说话时间太短</string>
-    
-     <!-- 系统消息提示 -->
+
+    <!-- 系统消息提示 -->
     <string name="xn_historyinfo">以上是历史消息</string>
     <string name="xn_kefu_leave">您好！客服不在线</string>
-    <string name="xn_kefu_leave2">您好！客服不在线，请</string>
+    <string name="xn_kefu_leave2">您好！客服不在线，请留言</string>
     <string name="xn_leave_queue">您好！客服忙碌中，您排在第</string>
-    <string name="xn_leave_queue3">位请稍后或</string>
+    <string name="xn_leave_queue3">位请稍后或留言</string>
+    <string name="xn_leave_queue4">位请稍后</string>
     <string name="xn_valuation_submit">评价提交成功！</string>
-    
     <string name="xn_queuing_toast">亲！客服忙碌中，请稍后！</string>
-	<string name="xn_requestkf">正在请求客服...</string>
+    <string name="xn_requestkf">正在请求客服...</string>
+    <string name="xn_btn_yes">是</string>
+    <string name="xn_btn_no">否</string>
+    <string name="xn_netinvalid_valuation">亲！无网络，评价暂时不可提交</string>
+    <string name="xn_robot_leave_message">留言</string>
+    <string name="xn_leavecolor_message">留言</string>
+    
+    <string name="xn_leavesetting_confirm">确定</string>
+    <string name="xn_kefu_inputing">正在输入...</string>
+    
+    <string name="xn_swifttorobot">转人工</string>
 	
-	<string name="xn_btn_yes">是</string>
-	<string name="xn_btn_no">否</string>
+	<!-- 消息成功率统计： 通道将消息转发给SDK后，SDK通知通道消息已接收到 -->
+    <string name="hwpush_ability_value" translatable="false">successRateAnalytics</string>
+    
+	<!--极简轨迹 -->
+	<string name="xn_trailtitle_home">首页</string>
+	<string name="xn_trailtitle_goodslist">商品页</string>
+	<string name="xn_trailtitle_goodsdetail">商品详情页</string>
+	<string name="xn_trailtitle_shoppingcart">购物车页</string>
+	<string name="xn_trailtitle_order">订单页</string>
+	<string name="xn_trailtitle_pay">支付页</string>
+	<string name="xn_trailtitle_paysuccess">支付成功页</string>
 	
-	<string name="xn_netinvalid_valuation">亲！无网络，评价暂时不可提交</string>
+    <string name="simple_sdk_groupname">在线客服</string>
+    
+    <string name="xn_xpush_notify01">您有新消息</string>
+    <string name="xn_record_tooshort">录制时间太短</string>
 </resources>

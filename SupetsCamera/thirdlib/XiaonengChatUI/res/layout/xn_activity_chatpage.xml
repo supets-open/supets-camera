@@ -6,73 +6,15 @@
     android:background="@color/xn_centercontent" >
 
     <RelativeLayout
-        android:id="@+id/sdk_chat_top"
+        android:id="@+id/sdk_chattop"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:background="@color/xn_sdk_head_bg" >
-        <TextView
-            android:id="@+id/tv_chat_username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:gravity="center"
-            android:maxEms="7"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:layout_marginLeft="3dp"
-            android:text="@string/xn_chatpage_kfname"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/xn_white"
-            android:textSize="18sp" />
-
-        <RelativeLayout
-            android:id="@+id/rl_finish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-             >
-
-            <ImageView
-                android:id="@+id/sdk_chat_finsh"
-                android:layout_width="24dp"
-                android:layout_height="34dp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/chat_headback" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/chat_username"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/sdk_chat_finsh"
-                android:text="@string/xn_chatpage_back1"
-                android:textColor="@color/xn_white"
-                android:textSize="16sp" />
-        </RelativeLayout>
-
-        <ImageView
-            android:id="@+id/over_chat"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/over" />
-
-        <ProgressBar
-            android:id="@+id/pb_requestkf"
-            style="@android:style/Widget.ProgressBar.Small.Inverse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/tv_chat_username"
-            android:visibility="gone"
-            android:indeterminateDrawable="@anim/progress_smallround" />
-
+        android:background="@color/xn_sdk_head_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
     </RelativeLayout>
-
 
     <cn.xiaoneng.uiview.XNListView
         android:id="@+id/chatListView"
@@ -80,18 +22,43 @@
         android:layout_height="fill_parent"
         android:layout_above="@+id/view01"
         android:layout_below="@+id/fl_showgoods"
-        android:background="@color/xn_centercontent"
         android:divider="@null"
         android:listSelector="@drawable/list_selector"
         android:overScrollMode="never"
         android:transcriptMode="normal" />
+    <!--
+         <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/fl_showgoods"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/yuzhou"
+        android:scaleType="centerCrop"/>
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view01"
+        android:layout_below="@+id/fl_showgoods" >
+
+        <ImageView
+            android:id="@+id/bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view01"
+            android:layout_below="@+id/fl_showgoods"
+            android:scaleType="centerCrop"
+             />
+    </ScrollView>
 
     <View
         android:id="@+id/view01"
         android:layout_width="fill_parent"
         android:layout_height="1px"
         android:layout_above="@+id/fl_chat"
-        android:background="@color/xn_edge" >
+        android:background="@color/xn_edge" 
+        android:visibility="gone">
     </View>
 
     <FrameLayout
@@ -113,7 +80,7 @@
         android:id="@+id/leave_sf"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_below="@id/sdk_chat_top"
+        android:layout_below="@id/sdk_chattop"
         android:background="@color/xn_tips"
         android:visibility="invisible" >
 
@@ -135,16 +102,15 @@
         android:id="@+id/fl_tip2"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@id/sdk_chat_top"
+        android:layout_below="@id/sdk_chattop"
         android:background="@color/xn_white"
-        android:visibility="gone"
-         >
+        android:visibility="gone" >
 
         <RelativeLayout
             android:id="@+id/rl_zhj"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_below="@id/sdk_chat_top"
+            android:layout_below="@id/sdk_chattop"
             android:background="#fff6ca" >
 
             <RelativeLayout
@@ -158,8 +124,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="14dp"
-                    android:background="@drawable/invite_switch"
-                     />
+                    android:background="@drawable/invite_switch" />
 
                 <TextView
                     android:id="@+id/tv_tips2"
@@ -180,8 +145,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="64dp"
-                    android:background="@drawable/reject_btn"
-                     />
+                    android:background="@drawable/reject_btn" />
 
                 <Button
                     android:id="@+id/bt_accept"
@@ -191,9 +155,7 @@
                     android:layout_alignBottom="@+id/bt_refuse"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="15dp"
-                    android:background="@drawable/accept_btn"
-                     />
-
+                    android:background="@drawable/accept_btn" />
             </RelativeLayout>
         </RelativeLayout>
     </FrameLayout>
@@ -202,15 +164,14 @@
         android:id="@+id/fl_tip_black"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/sdk_chat_top"
+        android:layout_below="@id/sdk_chattop"
         android:background="@color/xn_white"
-         >
+        android:visibility="gone" >
 
         <RelativeLayout
-            android:id="@+id/rl_zhj"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@id/sdk_chat_top"
+            android:layout_below="@id/sdk_chattop"
             android:background="#fff6ca" >
 
             <RelativeLayout
@@ -223,7 +184,6 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="14dp"
-                    android:layout_toRightOf="@+id/tv_zhuanjie"
                     android:clickable="false"
                     android:text="@string/xn_chatpage_blacklist"
                     android:textColor="@color/xn_black"
@@ -238,30 +198,26 @@
                     android:layout_marginRight="20dp"
                     android:background="@drawable/black_release"
                     android:gravity="center" />
-
             </RelativeLayout>
         </RelativeLayout>
     </FrameLayout>
+
     <RelativeLayout
         android:id="@+id/fl_showgoods"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_below="@id/sdk_chat_top"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="0dp"
-        android:visibility="gone"
-        android:background="@drawable/goods_relative"
-         >
+        android:layout_below="@id/sdk_chattop"
+        android:background="@color/xn_white"
+        android:visibility="gone" >
 
-        <include
+        <!--
+			        <include
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             layout="@layout/xn_showgoods"
-            android:background="@color/xn_bg_goods" />
-    </RelativeLayout>
+           />
+        -->
 
- 
+    </RelativeLayout>
 
 </RelativeLayout>

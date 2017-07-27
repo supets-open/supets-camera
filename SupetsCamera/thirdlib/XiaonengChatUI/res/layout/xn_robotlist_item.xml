@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#4EB8F2"
+        android:textSize="14sp"
+        android:id="@+id/list_item_tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:lineSpacingExtra="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asjdlkajdlajlk1" />
+
+</RelativeLayout>

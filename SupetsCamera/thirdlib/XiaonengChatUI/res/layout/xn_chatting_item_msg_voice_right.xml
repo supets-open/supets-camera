@@ -13,7 +13,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="sssss"
         android:textSize="12sp" />
   
     <RelativeLayout
@@ -26,15 +25,10 @@
 
         <!-- android:background="@drawable/chat_send_time_bg" -->
 
-        <cn.xiaoneng.uiview.CustomImageView
+		<include 
             android:id="@+id/iv_rv_userhead"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:focusable="false"
-            android:src="@drawable/visitor" />
-
+            layout="@layout/xn_righthead_include"
+            />
         <RelativeLayout
             android:id="@+id/i_tv_chatcc"
             android:layout_width="wrap_content"

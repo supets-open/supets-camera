@@ -56,7 +56,7 @@
                         android:layout_marginLeft="21dp"
                         android:layout_toRightOf="@+id/item_vgood"
                         android:text="@string/xn_ad_appraise_vg"
-                        android:textColor="@color/xn_sdk_head_bg"
+                        android:textColor="@color/xn_valu_text_bg"
                         android:textSize="18sp"
                         tools:ignore="RelativeOverlap" />
 
@@ -273,7 +273,6 @@
                     android:id="@+id/ed_rela6"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/sdk_pj_item"
                     android:layout_marginTop="4dp" >
 
                     <TextView
@@ -293,7 +292,6 @@
                         android:layout_height="1dip"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="18dp"
-                        android:layout_toRightOf="@+id/tv000"
                         android:background="@drawable/valu_right" />
 
                     <View
@@ -301,7 +299,6 @@
                         android:layout_height="1dip"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="18dp"
-                        android:layout_toLeftOf="@+id/tv000"
                         android:background="@drawable/valu_left" />
                 </RelativeLayout>
 
@@ -339,7 +336,7 @@
                     android:layout_alignRight="@+id/view_val01"
                     android:gravity="center"
                     android:text="@string/xn_cancel"
-                    android:textColor="@color/xn_sdk_head_bg"
+                    android:textColor="@color/xn_valu_text_bg"
                     android:textSize="18sp" />
 
                 <TextView
@@ -351,7 +348,7 @@
                     android:layout_alignParentTop="true"
                     android:gravity="center"
                     android:text="@string/xn_submit"
-                    android:textColor="@color/xn_sdk_head_bg"
+                    android:textColor="@color/xn_valu_text_bg"
                     android:textSize="18sp" />
 
                 <View

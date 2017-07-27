@@ -13,7 +13,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="sssss"
         android:textSize="12sp" />
 
     <!-- android:background="@drawable/chat_send_time_bg" -->
@@ -27,14 +26,10 @@
         android:layout_below="@id/tv_li_sendtime"
         android:focusable="true" >
 
-        <cn.xiaoneng.uiview.CustomImageView
+        <include 
             android:id="@+id/iv_userhead"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:focusable="false"
-            android:src="@drawable/kefu" />
+            layout="@layout/xn_lefthead_include"
+            />
 
         <RelativeLayout
             android:id="@+id/rl_l_image_uname"
@@ -48,7 +43,6 @@
                 android:id="@+id/l_image_uname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2222"
                 android:textColor="@color/xn_black"
                 android:visibility="gone" />
         </RelativeLayout>

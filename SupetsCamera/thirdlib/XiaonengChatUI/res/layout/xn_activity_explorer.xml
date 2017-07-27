@@ -16,7 +16,7 @@
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/xn_sdk_head_bg" >
+        android:background="@color/xn_head_explo_bg" >
 
         <RelativeLayout
             android:id="@+id/rl_explorer_back"
@@ -53,7 +53,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:background="@color/xn_sdk_head_bg" >
+        android:background="@color/xn_head_explo_bg" >
 
         <RelativeLayout
             android:id="@+id/rl_explorer_bachorgo"

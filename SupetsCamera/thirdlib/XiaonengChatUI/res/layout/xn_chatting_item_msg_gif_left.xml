@@ -13,7 +13,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="sssss"
         android:textSize="12sp" />
     <RelativeLayout
         android:id="@+id/rl_l_gif_msg"
@@ -25,15 +24,10 @@
         android:layout_below="@id/tv_l_gif_sendtime"
         android:focusable="true" >
 
-        <cn.xiaoneng.uiview.CustomImageView
+		<include 
             android:id="@+id/iv_l_gif_userhead"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:focusable="false"
-            android:src="@drawable/kefu" />
-
+            layout="@layout/xn_lefthead_include"
+            />
         <RelativeLayout
             android:id="@+id/l_rl_gif_name"
             android:layout_width="wrap_content"
@@ -47,7 +41,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/xn_black"
-                android:text="2222" 
                 android:visibility="gone"/>
         </RelativeLayout>
 

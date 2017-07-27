@@ -2,7 +2,15 @@
 <resources>
 
     <!-- 可替换的色值 start-->
-    <color name="xn_sdk_head_bg">#32a7f5</color>
+    <color name="xn_sdk_head_bg">#37a1f2</color>
+    <color name="xn_head_explo_bg">#37a1f2</color>
+    <color name="xn_leave_head_bg">#37a1f2</color>
+    <color name="xn_valu_text_bg">#37a1f2</color>
+    <color name="xn_leave_text_bg">#37a1f2</color>
+    <color name="xn_sdk_dialog_bg">#37a1f2</color>
+    <color name="xn_valuation_text">#37a1f2</color>
+    <color name="xn_valuation_text2">#8C8C8C</color>
+    <color name="xn_robot_listtext">#31a6f4</color>
     <color name="xn_text_color">#000000</color>
     <color name="xn_centercontent">#f3f3f7</color>
     <color name="xn_press_text">#999999</color>
@@ -17,6 +25,7 @@
     <color name="xn_bg_color">#f8f8f8</color>
     <color name="xn_bg_color_deep">#E5E5E5</color>
     <color name="xn_black">#333333</color>
+    <color name="xn_black2">#AAA</color>
     <color name="xn_grey">#666666</color>
     <color name="xn_black_half">#50000000</color>
     <color name="xn_red">#FFFF0000</color>
@@ -36,5 +45,7 @@
     <color name="xn_tips">#FAF9DE</color>
     <color name="xn_bg_goods">#d4d4d4</color>
     <color name="xn_card_title">#323232</color>
+    <color name="xn_sdk_hint">#CACACA</color>
+    <color name="xn_valuationsolve_text">#6FCA5A</color>
     <!-- <color name="xn_release_text">#999999</color> -->
 </resources>

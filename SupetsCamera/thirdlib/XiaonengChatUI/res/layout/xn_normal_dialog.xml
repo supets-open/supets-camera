@@ -46,7 +46,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/xn_confirm"
-            android:textColor="@color/xn_sdk_head_bg"
+            android:textColor="@color/xn_sdk_dialog_bg"
             android:textSize="20sp" />
 
         <View
@@ -65,7 +65,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/xn_cancel"
-            android:textColor="@color/xn_sdk_head_bg"
+            android:textColor="@color/xn_sdk_dialog_bg"
             android:textSize="20sp" />
     </LinearLayout>
 

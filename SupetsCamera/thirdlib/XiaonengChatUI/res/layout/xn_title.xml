@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/xn_sdk_head_bg" >
+
+        <TextView
+            android:id="@+id/tv_chat_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:text="@string/xn_chatpage_kfname"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/xn_white"
+            android:textSize="18sp" />
+        <RelativeLayout
+            android:id="@+id/rl_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/sdk_chat_finsh"
+                android:layout_width="24dp"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chat_headback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/sdk_chat_finsh"
+                android:text="@string/xn_chatpage_back1"
+                android:textColor="@color/xn_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/over_chat"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/over" />
+
+        <ProgressBar
+            android:id="@+id/pb_requestkf"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_chat_username"
+            android:indeterminateDrawable="@anim/progress_smallround"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/over_chat"
+            android:layout_marginRight="22dp"
+            android:layout_toLeftOf="@+id/over_chat"
+            android:text="电话" 
+            android:visibility="gone"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>

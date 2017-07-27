@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/showgoodslayout"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:id="@+id/showgoodslayout"
-    >
+     >
 
     <WebView
         android:id="@+id/wv_goods"
@@ -12,10 +12,10 @@
         android:layout_margin="1dp"
         android:adjustViewBounds="true"
         android:background="#d4d4d4"
-        android:overScrollMode="never"
+        android:clickable="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:clickable="false"
+        android:overScrollMode="never"
         android:scrollbars="none" />
 
     <ImageView
@@ -25,15 +25,15 @@
         android:layout_margin="8dp"
         android:clickable="false"
         android:scaleType="centerCrop"
-        android:src="@drawable/visitor" 
-        />
+        android:src="@drawable/visitor" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/iv_goods"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/iv_goods"
         android:clickable="false" >
 
         <TextView
@@ -45,8 +45,7 @@
             android:lines="2"
             android:text="99999999"
             android:textColor="@color/xn_black"
-            android:textSize="16sp" 
-            />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tv_goodsprice"
@@ -56,8 +55,20 @@
             android:clickable="false"
             android:text="231"
             android:textColor="@color/xn_red"
-            android:textSize="16sp" 
-            />
+            android:textSize="16sp" />
+        
+          <TextView
+            android:id="@+id/tv_sendgoods"
+            android:layout_width="54dp"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="发送"
+            android:background="@drawable/send_btn"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:textColor="@color/xn_black" />
     </RelativeLayout>
 
 </RelativeLayout>

@@ -14,7 +14,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="sssss"
         android:textSize="12sp" />
 
     <RelativeLayout
@@ -27,16 +26,10 @@
         android:layout_below="@id/tv_rt_sendtime"
         android:gravity="right" >
 
-       <cn.xiaoneng.uiview.CustomImageView
+		<include 
             android:id="@+id/iv_rt_userhead"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            style="@style/valuationdialog"
-            android:focusable="false"
-            android:src="@drawable/visitor" 
+            layout="@layout/xn_righthead_include"
             />
-
         <LinearLayout
             android:id="@+id/ll_left_text"
             android:layout_width="wrap_content"
@@ -75,13 +68,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:autoLink="all"
+                android:autoLink="phone"
                 android:background="@drawable/rtt"
                 android:clickable="true"
                 android:layout_marginRight="4dp"
                 android:focusable="true"
                 android:gravity="center_vertical"
-                android:text="ssssssss"
                 android:textColor="@color/xn_text_color"
                 android:textSize="15sp" />
         </LinearLayout>

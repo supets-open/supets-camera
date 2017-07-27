@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/com.xiaoneng.xnlibrary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+      <TextView
+        android:id="@+id/tv_lv_sendtime"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="12sp" />
+ 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_lv_sendtime"
+        android:layout_marginTop="6dp" >
+
+        <!-- android:background="@drawable/chat_send_time_bg" -->
+
+        <include 
+            android:id="@+id/iv_lv_userhead"
+            layout="@layout/xn_lefthead_include"
+            />
+		<RelativeLayout
+            android:id="@+id/l_rl_voice_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/iv_lv_userhead"
+            android:focusable="true" >
+
+            <TextView
+                android:id="@+id/l_voice_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xn_black"
+                android:visibility="gone"
+              />
+             </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/i_tv_chatccl"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@+id/l_rl_voice_uname"
+            android:layout_toRightOf="@id/iv_lv_userhead"
+            android:background="@drawable/l2"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:minHeight="40dp" >
+
+            <VideoView 
+             android:id="@+id/left_vv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

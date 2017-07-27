@@ -48,7 +48,7 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:text="@string/xn_leave_message"
-                android:textColor="@color/xn_sdk_head_bg"
+                android:textColor="@color/xn_leave_text_bg"
                 android:textSize="18sp" />
 
             <View
@@ -67,7 +67,7 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:text="@string/xn_leavemsg_dialogback"
-                android:textColor="@color/xn_sdk_head_bg"
+                android:textColor="@color/xn_leave_text_bg"
                 android:textSize="18sp" />
         </LinearLayout>
     </RelativeLayout>
