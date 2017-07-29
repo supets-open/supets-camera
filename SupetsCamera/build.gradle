@@ -2,19 +2,21 @@
 
 buildscript {
     repositories {
+        mavenLocal()
+        maven { url('http://localhost:8082/nexus/content/groups/public') }
         jcenter()
-        maven {      url('http://localhost:8082/nexus/content/groups/public') }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.3'
     }
 
 }
 
 allprojects {
     repositories {
+        mavenLocal()
+        maven { url('http://localhost:8082/nexus/content/groups/public') }
         jcenter()
-        maven {       url('http://localhost:8082/nexus/content/groups/public') }
     }
 }
 

@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 apply plugin: 'maven'
-group = 'com.supets.pet.supetscamera'
+group = 'com.supets.camera'
 version = '2.0.0'
 
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: 'http://localhost:8081/nexus/content/repositories/supet') {
+            repository(url: 'http://localhost:8082/nexus/content/repositories/supet') {
                 authentication(userName: "admin", password: "admin123")
             }
         }
@@ -22,9 +22,10 @@ android {
         sourceCompatibility rootProject.ext.sourceCompatibility
         targetCompatibility rootProject.ext.targetCompatibility
     }
+
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -47,13 +48,15 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:23.0.0'
-    compile 'com.android.support:recyclerview-v7:23.0.0'
+
     compile 'com.anthonycr.grant:permissions:1.0'
+    compile 'com.supets.lib:frescolib:2.0.0'
+    compile 'com.supets.commons:commonui:2.2.0'
+    compile 'com.supets.lib:contextlib:2.0.0'
+
+
     testCompile 'junit:junit:4.12'
 
-    compile 'com.supets.pet.supetscontext:supetscontext:2.0.0'
-
-
+    compile project(path: ':lib:contextlib')
 }
 

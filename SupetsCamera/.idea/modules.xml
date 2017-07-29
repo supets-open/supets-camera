@@ -10,17 +10,21 @@
       <module fileurl="file://$PROJECT_DIR$/thirdlib/WeiboSDK/WeiboSDK.iml" filepath="$PROJECT_DIR$/thirdlib/WeiboSDK/WeiboSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/thirdlib/XiaonengChatUI/XiaonengChatUI.iml" filepath="$PROJECT_DIR$/thirdlib/XiaonengChatUI/XiaonengChatUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/cameralib/cameralib.iml" filepath="$PROJECT_DIR$/module/cameralib/cameralib.iml" />
       <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/commons/commonui/commonui.iml" filepath="$PROJECT_DIR$/commons/commonui/commonui.iml" />
       <module fileurl="file://$PROJECT_DIR$/commons/commonutils/commonutils.iml" filepath="$PROJECT_DIR$/commons/commonutils/commonutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/contextlib/contextlib.iml" filepath="$PROJECT_DIR$/lib/contextlib/contextlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/croplib/croplib.iml" filepath="$PROJECT_DIR$/module/croplib/croplib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/frescolib/frescolib.iml" filepath="$PROJECT_DIR$/lib/frescolib/frescolib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/grantlib/grantlib.iml" filepath="$PROJECT_DIR$/lib/grantlib/grantlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/jsonlib/jsonlib.iml" filepath="$PROJECT_DIR$/lib/jsonlib/jsonlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/maillib/maillib.iml" filepath="$PROJECT_DIR$/lib/maillib/maillib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/module.iml" filepath="$PROJECT_DIR$/module/module.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/okhttplib/okhttplib.iml" filepath="$PROJECT_DIR$/lib/okhttplib/okhttplib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/ottolib/ottolib.iml" filepath="$PROJECT_DIR$/lib/ottolib/ottolib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/photolib/photolib.iml" filepath="$PROJECT_DIR$/module/photolib/photolib.iml" />
       <module fileurl="file://$PROJECT_DIR$/thirdlib/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/thirdlib/ptr-lib/ptr-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/retrofitlib/retrofitlib.iml" filepath="$PROJECT_DIR$/lib/retrofitlib/retrofitlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/routerlib/routerlib.iml" filepath="$PROJECT_DIR$/lib/routerlib/routerlib.iml" />

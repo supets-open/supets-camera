@@ -23,6 +23,10 @@
             <option value="$PROJECT_DIR$/lib/retrofitlib" />
             <option value="$PROJECT_DIR$/lib/routerlib" />
             <option value="$PROJECT_DIR$/lib/suppertlib" />
+            <option value="$PROJECT_DIR$/module" />
+            <option value="$PROJECT_DIR$/module/cameralib" />
+            <option value="$PROJECT_DIR$/module/croplib" />
+            <option value="$PROJECT_DIR$/module/photolib" />
             <option value="$PROJECT_DIR$/thirdlib" />
             <option value="$PROJECT_DIR$/thirdlib/Emojicon" />
             <option value="$PROJECT_DIR$/thirdlib/MotuSDKLib" />

@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 apply plugin: 'maven'
-group = 'com.supets.pet.multiimageselector'
+group = 'com.supets.camera'
 version = '2.0.0'
 
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: 'http://localhost:8081/nexus/content/repositories/supet') {
+            repository(url: 'http://localhost:8082/nexus/content/repositories/supet') {
                 authentication(userName: "admin", password: "admin123")
             }
         }
@@ -15,7 +15,6 @@ uploadArchives {
 }
 
 android {
-
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -23,9 +22,10 @@ android {
         sourceCompatibility rootProject.ext.sourceCompatibility
         targetCompatibility rootProject.ext.targetCompatibility
     }
+
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -47,8 +47,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
-    compile 'com.supets.pet.suppertlib:suppertlib:2.0.0'
-    compile 'com.supets.commons:SupetsCommons:2.0.0'
-    compile 'com.supets.pet.frescolibrary:frescolibrary:2.0.0'
-
+    compile 'com.supets.lib:frescolib:2.0.0'
+    compile 'com.supets.commons:commonui:2.2.0'
+    compile 'com.supets.commons:commonutils:2.2.0'
 }
