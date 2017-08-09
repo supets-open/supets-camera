@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 
 apply plugin: 'maven'
 group = 'com.supets.thirdlib'
-version = '2.7.0'
+version = '2.8.0'
 
 uploadArchives {
     repositories {
