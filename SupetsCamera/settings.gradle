@@ -17,7 +17,6 @@ include ':thirdlib:XiaonengChatUI'
 include ':thirdlib:MotuSDKLib'
 include ':thirdlib:WeiboSDK'
 include ':thirdlib:ptr-lib'
-include ':thirdlib:PushSDK'
 include ':thirdlib:volloylib'
 include ':thirdlib:PushSDK311'
 
