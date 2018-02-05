@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/thirdlib/Emojicon/Emojicon.iml" filepath="$PROJECT_DIR$/thirdlib/Emojicon/Emojicon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/thirdlib/MotuSDKLib/MotuSDKLib.iml" filepath="$PROJECT_DIR$/thirdlib/MotuSDKLib/MotuSDKLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/thirdlib/PushSDK311/PushSDK311.iml" filepath="$PROJECT_DIR$/thirdlib/PushSDK311/PushSDK311.iml" />
       <module fileurl="file://$PROJECT_DIR$/SupetsCamera.iml" filepath="$PROJECT_DIR$/SupetsCamera.iml" />
       <module fileurl="file://$PROJECT_DIR$/thirdlib/WeiboSDK/WeiboSDK.iml" filepath="$PROJECT_DIR$/thirdlib/WeiboSDK/WeiboSDK.iml" />
@@ -22,7 +21,6 @@
       <module fileurl="file://$PROJECT_DIR$/lib/maillib/maillib.iml" filepath="$PROJECT_DIR$/lib/maillib/maillib.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/module.iml" filepath="$PROJECT_DIR$/module/module.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/okhttplib/okhttplib.iml" filepath="$PROJECT_DIR$/lib/okhttplib/okhttplib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib/ottolib/ottolib.iml" filepath="$PROJECT_DIR$/lib/ottolib/ottolib.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/photolib/photolib.iml" filepath="$PROJECT_DIR$/module/photolib/photolib.iml" />
       <module fileurl="file://$PROJECT_DIR$/thirdlib/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/thirdlib/ptr-lib/ptr-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/retrofitlib/retrofitlib.iml" filepath="$PROJECT_DIR$/lib/retrofitlib/retrofitlib.iml" />
