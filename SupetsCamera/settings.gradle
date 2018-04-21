@@ -1,29 +1,27 @@
 include ':app'
 //  已经完成
-include ':lib:suppertlib'
-//include ':lib:ottolib'
-include ':lib:contextlib'
-include ':lib:jsonlib'
-include ':lib:okhttplib'
-include ':lib:retrofitlib'
+include ':lib:suppertlib'           //万宠使用
+include ':lib:contextlib'           //万宠使用
+include ':lib:jsonlib'              //万宠使用
+include ':lib:okhttplib'            //万宠使用
+include ':lib:retrofitlib'          //万宠使用
 include ':lib:frescolib'
-include ':lib:grantlib'
-include ':lib:routerlib'
-include ':lib:maillib'
-include ':commons:commonutils'
-include ':commons:commonui'
-include ':thirdlib:Emojicon'
-include ':thirdlib:XiaonengChatUI'
-//include ':thirdlib:MotuSDKLib'
-include ':thirdlib:WeiboSDK'
-include ':thirdlib:ptr-lib'
-include ':thirdlib:volloylib'
-include ':thirdlib:PushSDK311'
+include ':lib:grantlib'             //万宠使用
+include ':lib:routerlib'            //万宠使用
 
-//  计划中
+include ':lib:maillib'
+include ':commons:commonutils'      //万宠使用
+include ':commons:commonui'
+include ':thirdlib:Emojicon'        //万宠使用
+include ':thirdlib:XiaonengChatUI'  //万宠使用
+include ':thirdlib:WeiboSDK'
+include ':thirdlib:ptr-lib'         //万宠使用
+include ':thirdlib:volloylib'
+include ':thirdlib:PushSDK311'      //万宠使用
+
+//计划中
 include ':module:cameralib'
 include ':module:photolib'
 include ':module:croplib'
 
-//support 改变影响emoji，grant，commonutils，commonUI
 
